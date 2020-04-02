@@ -11,14 +11,14 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <router-link class="nav-link" to="/home">Home <span class="sr-only">
+        <router-link class="nav-link" to="/">Home <span class="sr-only">
           (current)</span></router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/about">Features</router-link>
+        <router-link class="nav-link" to="/register">Register</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <router-link class="nav-link" to="/login">login</router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

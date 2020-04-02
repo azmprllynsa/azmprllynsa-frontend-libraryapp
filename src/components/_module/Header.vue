@@ -1,10 +1,7 @@
 <template>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Librarty Coba</h1>
-    <p class="lead">This is a modified jumbotron that occupies
-      the entire horizontal space of its parent.</p>
-  </div>
+<div class="pict-container">
+  <h1>Book is a window <br> to the world</h1>
+  <p>Photo by Mark Pan4ratte on Unsplash</p>
 </div>
 </template>
 <script>
@@ -12,17 +9,40 @@ export default {
   name: 'Header',
 };
 </script>
-<style lang="scss" scoped>
-.jumbotron{
-  height: 400px !important;
-  background-image: url('../../assets/img/bg.jpeg');
+<style scoped>
+.pict-container{
+    width: 60%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3),
+     rgba(0, 0, 0, 0.3)), url("../../assets/image/bigpict.jpg");
+    background-size: cover;
+    height: 1024px;
+    background-position: center center;
+    min-height: 100vh;
 }
-.container{
-  .display-4{
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 2px 2px rgba(0, 0, 0, .5);
-  }
+.pict-container h1{
+    position: absolute;
+    width: 808px;
+    height: 318px;
+    left: 56px;
+    top: 88px;
+    font-size: 64px;
+    line-height: 83px;
+    color: #F9F9F9;
+    z-index: 1;
 }
 
+.pict-container p{
+    position: absolute;
+    width: 378px;
+    height: 30px;
+    left: 29px;
+    top: 977px;
+    font-family: Opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F9F9F9;
+    z-index: 1;
+}
 </style>

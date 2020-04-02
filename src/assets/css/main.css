@@ -1,0 +1,61 @@
+@import "./login.css";
+@import "./details.css";
+
+@font-face{
+    font-family: 'AirbnbCereal App Black';
+    src: url('../font/AirbnbCereal-Black.ttf');
+}
+@font-face{
+    font-family: 'AirbnbCereal App Bold';
+    src: url('../font/AirbnbCereal-Bold.ttf')
+}
+@font-face{
+    font-family: 'AirbnbCereal App Book';
+    src: url('../font/AirbnbCereal-Book.ttf')
+}
+@font-face{
+    font-family: 'AirbnbCereal App Extrabold';
+    src: url('../font/AirbnbCereal-ExtraBold.ttf')
+}
+@font-face{
+    font-family: 'Airbnb App Light';
+    src: url('../font/AirbnbCereal-Light.ttf')
+}
+@font-face{
+    font-family: 'AirbnbCereal App Medium';
+    src: url('../font/AirbnbCereal-Medium.ttf')
+}
+@font-face{
+    font-family: 'Opensans';
+    src: url('../font/OpenSans-Light.ttf');
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    font-family: Airbnb Cereal App;
+}
+
+.container-details{
+    font-family: Airbnb Cereal App;
+}
+
+@media only screen and (max-width: 768px) {
+    .pict-container {
+      display: none;
+    }
+    
+    .form-container{
+        width: 100%;
+    }
+}
