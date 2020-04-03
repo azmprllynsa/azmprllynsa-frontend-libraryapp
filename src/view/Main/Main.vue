@@ -43,7 +43,6 @@ export default {
     src: url('../../assets/font/OpenSans-Light.ttf');
 }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -51,5 +50,15 @@ export default {
 
 a {
     text-decoration: none;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    font-family: Airbnb Cereal App;
+}
+
+.container-details{
+    font-family: Airbnb Cereal App;
 }
 </style>

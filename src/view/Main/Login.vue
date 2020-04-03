@@ -1,11 +1,11 @@
 <template>
   <div class="login-container">
-    <Header class="pict-container"/>
-    <div class="form-container">
+    <Header class="pict-container col-lg-7"/>
+    <div class="form-container col-lg-5">
       <FormInput :title= 'title'/>
       <FormLogin/>
       <Checkbox/>
-      <LoginButton :button1= 'button1' :button2= 'button2'/>
+      <LoginButton class= 'login-button' :button1= 'button1' :button2= 'button2'/>
     </div>
   </div>
 </template>
@@ -45,16 +45,17 @@ export default {
 </script>
 
 <style scope>
-.login-container {
+/* .login-container {
   display: flex;
 }
-.pict-container {
-  width: 60%;
-}
+
 .form-container {
-    width: 40%;
     display: flex;
     flex-direction: column;
+} */
+
+.login-button{
+  margin-top: 50px;
 }
 
 @media (max-width: 576px) {

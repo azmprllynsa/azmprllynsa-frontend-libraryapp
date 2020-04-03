@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar/>
+    <HeaderLanding/>
     <div class="content">
       <div class="row">
         <div class="col-md-3">
@@ -17,6 +18,7 @@
 
 <script>
 import axios from 'axios';
+import HeaderLanding from '../../components/_module/HeaderLanding.vue';
 import Navbar from '../../components/_module/Navbar.vue';
 import Sidebar from '../../components/_module/Sidebar.vue';
 import AddBook from '../../components/_module/AddBook.vue';
@@ -25,6 +27,7 @@ import ContainerBook from '../../components/_module/ContainerBook.vue';
 export default {
   name: 'App',
   components: {
+    HeaderLanding,
     Navbar,
     Sidebar,
     AddBook,

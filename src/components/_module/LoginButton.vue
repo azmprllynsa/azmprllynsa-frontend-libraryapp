@@ -1,7 +1,7 @@
 <template>
   <div class="login-input submit-btn">
-    <a href= '#' class="button btn-1">{{button1}}</a>
-    <a href= '#' class="button btn-2">{{button2}}</a>
+    <router-link to='/' class="button btn-1">{{button1}}</router-link>
+    <router-link to='/' class="button btn-2">{{button2}}</router-link>
   </div>
 </template>
 

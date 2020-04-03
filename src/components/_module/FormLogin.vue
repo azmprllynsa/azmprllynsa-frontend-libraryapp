@@ -21,15 +21,15 @@ export default {
 .form-input {
     box-shadow: 0 5px 10px #d0cccc;
     color: #D0CCCC;
-    /* position: absolute; */
     top: 400px;
 }
+
 .login-input {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
-    /* padding-right: 200px; */
+    padding-right: 200px;
 }
 
 #email,

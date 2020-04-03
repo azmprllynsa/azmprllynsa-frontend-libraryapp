@@ -7,9 +7,9 @@
         <p class="remember">Remember Me</p>
     </div>
     <div class="forgot">
-      <a href="#" class="forgot-password">
+      <router-link to='#' class="forgot-password">
         Forgot Password
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

@@ -2,7 +2,10 @@
   <footer class="tnc">
     <span>By signing up, you agree to Book’s</span>
     <br>
-    <a href="#">Terms and Conditions</a> <span>&</span> <a href="#"> Privacy Policy</a>
+    <router-link to='/'>Terms and Conditions</router-link> <span>&</span>
+    <router-link to='/'>
+      Privacy Policy
+      </router-link>
   </footer>
 </template>
 
