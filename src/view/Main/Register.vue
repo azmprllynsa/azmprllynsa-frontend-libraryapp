@@ -1,39 +1,48 @@
 <template>
-  <div>
-    <Header/>
+  <div class="login-container">
+    <Header class="pict-container"/>
+    <div class="form-container">
+      <FormInput :title= 'title'/>
+    </div>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 import Header from '../../components/_module/Header.vue';
+import FormInput from '../../components/_module/FormInput.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-  },
-  methods: {
-    addBookmaster(newBook) {
-      this.books = [...this.books, newBook];
-    },
+    FormInput,
   },
   data() {
     return {
-      books: [
-      ],
-      container: null,
+      title: 'Register',
     };
   },
+
   mounted() {
-    axios.get('http://api.tvmaze.com/search/shows?q=naruto')
-      .then((res) => {
-        this.books = res.data;
-      });
+
   },
 };
 </script>
 
-<style>
-
+<style scope>
+.login-container {
+  display: flex;
+}
+.pict-container {
+  width: 60%;
+}
+.form-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    min-height: 100vh;
+    color: #424242;
+}
 </style>

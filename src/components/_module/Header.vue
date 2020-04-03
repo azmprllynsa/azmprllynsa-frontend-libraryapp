@@ -11,13 +11,14 @@ export default {
 </script>
 <style scoped>
 .pict-container{
-    width: 60%;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3),
+  font-family: Airbnb Cereal App;
+  width: 55%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3),
      rgba(0, 0, 0, 0.3)), url("../../assets/image/bigpict.jpg");
-    background-size: cover;
-    height: 1024px;
-    background-position: center center;
-    min-height: 100vh;
+  background-size: cover;
+  height: 1024px;
+  background-position: center center;
+  min-height: 100vh;
 }
 .pict-container h1{
     position: absolute;
@@ -29,6 +30,8 @@ export default {
     line-height: 83px;
     color: #F9F9F9;
     z-index: 1;
+    font-family: Airbnb Cereal App;
+    font-weight: bold;
 }
 
 .pict-container p{

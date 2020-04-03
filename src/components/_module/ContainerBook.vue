@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="row mt-4">
+  <div class="row md-4">
     <div v-for="book in books" :key="book.id">
       <div class="col-md-4">
   <Card :book="book"/>
