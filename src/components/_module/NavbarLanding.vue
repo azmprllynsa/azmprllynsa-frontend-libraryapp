@@ -11,9 +11,9 @@
         <div class="navbar-nav ml-auto">
           <router-link to='/' class="nav-item nav-link active">Home <span class="sr-only">
             (current)</span></router-link>
-          <router-link to='/' class="nav-item nav-link">Categories</router-link>
+          <router-link to='/dashboard' class="nav-item nav-link">Categories</router-link>
           <router-link to='/' class="nav-item nav-link">Years</router-link>
-          <router-link to='/register' class="nav-item nav-link">About</router-link>
+          <router-link to='/' class="nav-item nav-link">About</router-link>
           <router-link to='/login' class="nav-item btn btn-primary tombol">
             Login</router-link>
         </div>
@@ -35,7 +35,7 @@ export default {
 }
 
 .navbar-brand{
-    font-family: Viga;
+    font-family: Airbnb Cereal App;
     font-size: 32px;
 }
 

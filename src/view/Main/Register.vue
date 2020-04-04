@@ -27,8 +27,8 @@ export default {
   data() {
     return {
       title: 'Register',
-      button1: 'Login',
-      button2: 'Sign Up',
+      button1: 'Sign Up',
+      button2: 'Login',
     };
   },
 

@@ -1,10 +1,11 @@
 <template>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">We share<span> knowledge </span><br> and <span> great </span> idea</h1>
-      <router-link to='/register' class="btn btn-primary tombol">Sign Up </router-link>
+      <h1 class="display-4">We share<span> knowledge </span>
+      <br> and <span> great </span> idea</h1>
+      <router-link to='/register' class="btn btn-primary tombol">Sign Up</router-link>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -14,6 +15,11 @@ export default {
 </script>
 
 <style scoped>
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
 .jumbotron{
     background-image: url('../../assets/image/190188-OXLQRO-735.jpg');
     background-size: cover;
@@ -46,9 +52,20 @@ export default {
     font-weight: 200;
 }
 
-.jumbotron .display-4 span{
+ .jumbotron .display-4 span{
     font-weight: 500;
 
+}
+
+@media (min-width: 992px){
+  .jumbotron{
+    margin-top: -75px;
+    height: 640px;
+    }
+
+  .jumbotron .display-4{
+    font-size: 62px;
+  }
 }
 
 </style>

@@ -52,11 +52,6 @@ a {
     text-decoration: none;
 }
 
-.container{
-    display: flex;
-    align-items: flex-start;
-    font-family: Airbnb Cereal App;
-}
 
 .container-details{
     font-family: Airbnb Cereal App;
