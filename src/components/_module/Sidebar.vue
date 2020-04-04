@@ -11,7 +11,7 @@
     <div class="profile">
       <img
         src="../../assets/image/45584233_524138308054985_5877540939093210292_n.png"
-        alt=" "
+        alt="Cewe Cantik"
       />
       <h4>Niki Zefanya</h4>
     </div>
