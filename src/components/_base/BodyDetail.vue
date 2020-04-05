@@ -1,20 +1,18 @@
 <template>
-  <div>
-    <detail-button/>
-  </div>
+  <detail-body/>
 </template>
 
 <script>
 
-import DetailButton from './DetailButton.vue';
+import DetailBody from '../_module/DetailBody.vue';
 
 export default {
+  name: 'BodyDetail',
   components: {
-    DetailButton,
+    DetailBody,
   },
 };
 </script>
-
 <style scoped>
 
 </style>

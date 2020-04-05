@@ -11,8 +11,8 @@
 
 <script>
 import axios from 'axios';
-import Header from '../../components/_module/Header.vue';
-import FormInput from '../../components/_module/FormInput.vue';
+import Header from '../../components/_base/Header.vue';
+import FormInput from '../../components/_base/FormInput.vue';
 import FormRegister from '../../components/_module/FormRegister.vue';
 import LoginButton from '../../components/_module/LoginButton.vue';
 

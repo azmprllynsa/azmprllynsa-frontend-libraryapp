@@ -9,9 +9,9 @@
 </template>
 <script>
 
-import Logo from './Logo.vue';
-import Intro from './Intro.vue';
-import FooterTnc from './FooterTnc.vue';
+import Logo from '../_module/Logo.vue';
+import Intro from '../_module/Intro.vue';
+import FooterTnc from '../_module/FooterTnc.vue';
 
 
 export default {

@@ -1,7 +1,7 @@
 <template>
   <div class="db-header">
     <div class="navbar">
-      <Sidebar class="sidebar-start" />
+      <Sidebar/>
       <div class="column is-1 toggle-menu" v-on:click="sidebarShow">
         <img src="../../assets/image/menu.png" alt="toggle-menu" class="hamburger">
       </div>
@@ -57,7 +57,6 @@ export default {
     sidebarShow() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.classList.toggle('show-sidebar');
-      console.log('Navbar');
     },
   },
 };

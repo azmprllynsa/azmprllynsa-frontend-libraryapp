@@ -6,6 +6,8 @@ import Home from './view/Main/Home.vue';
 import Login from './view/Main/Login.vue';
 import Register from './view/Main/Register.vue';
 import Dashboard from './view/Main/Dashboard.vue';
+import Detail from './view/Main/DetailBook.vue';
+import Test from './view/Main/Test.vue';
 import Main from './view/Main/Main.vue';
 
 vue.use(VueRouter);
@@ -35,6 +37,16 @@ const routes = [{
             path: '/dashboard',
             name: 'Dashboard',
             component: Dashboard,
+        },
+        {
+            path: '/test',
+            name: 'Test',
+            component: Test,
+        },
+        {
+            path: '/detail',
+            name: 'Detail',
+            component: Detail,
         },
     ],
 }];

@@ -18,7 +18,7 @@ export default {
 <style scope>
 .tnc {
     font-size: 17px;
-    top: 950px;
+    top: 870px;
     line-height: 22px;
     color: #D0CCCC;
     position: absolute;

@@ -11,7 +11,7 @@
     <div class="profile">
       <img
         src="../../assets/image/45584233_524138308054985_5877540939093210292_n.png"
-        alt="Cewe Cantik"
+        alt="  "
       />
       <h4>Niki Zefanya</h4>
     </div>
@@ -20,11 +20,11 @@
     <div class="sidebar-menu">
       <p>Explore</p>
       <p>History</p>
-      <p data-toggle="modal" v-on:click="showModal">Add Book*</p>
+      <Modal class="modal-add" title='Add Data'/>
+  <p type="button" data-toggle="modal"
+    data-target="#exampleModal" data-whatever="@getbootstrap">Add Book*</p>
       <p>Logout</p>
     </div>
-    <!-- Sidebar Menu -->
-    <Modal modalTitle="Add Book" />
   </section>
 </template>
 
@@ -36,20 +36,24 @@ export default {
   components: {
     Modal,
   },
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
   methods: {
     sidebarHide() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.classList.toggle('show-sidebar');
       console.log('Sidebar');
     },
-    showModal() {
-      const modal = document.querySelector('.modal');
-      modal.classList.toggle('is-active');
-    },
   },
 };
 </script>
-<style>
+<style scope>
+.modal-backdrop{
+  z-index: inherit;
+}
   .sidebar-button{
     border: none;
     cursor: pointer;
@@ -67,7 +71,7 @@ export default {
     position: fixed;
     /* display: none; */
     transition: 1s;
-    z-index: 2;
+    z-index: 1;
     margin-left: -300px;
     box-shadow: none;
   }
@@ -121,6 +125,6 @@ export default {
 
   .sidebar-menu > p:hover {
     color: #424242;
-    transition: 0.5s;
+    transition: 300ms;
   }
 </style>

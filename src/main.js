@@ -1,12 +1,11 @@
 import Vue from 'vue';
+import VueSweetalert2 from 'vue-sweetalert2';
 import App from './App.vue';
 import router from './router';
 
-Vue.config.productionTip = false;
 
-// video youtube
-// https://www.youtube.com/watch?v=Wy9q22isx3U
-// https://www.youtube.com/watch?v=EmCBOtkXxdg&list=PLCZlgfAG0GXCFeOD_wBc9GrYF9pA8loLQ
+Vue.config.productionTip = false;
+Vue.use(VueSweetalert2);
 
 new Vue({
   router,

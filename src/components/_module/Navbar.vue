@@ -1,25 +1,39 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <router-link to='/' class="navbar-brand">Library</router-link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <router-link to='/' class="nav-item nav-link active">Home <span class="sr-only">
-            (current)</span></router-link>
-          <router-link to='/' class="nav-item nav-link">Categories</router-link>
-          <router-link to='/' class="nav-item nav-link">Years</router-link>
-          <router-link to='/register' class="nav-item nav-link">About</router-link>
-          <router-link to='/login' class="nav-item btn btn-primary tombol">
-            Login</router-link>
-        </div>
+<div>
+<div class="modal fade modal-add" id="exampleModal" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Add Data</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="modal-body">
+                <label>Url Image</label>
+                <input type="text"  name="url-img">
+            </div>
+            <div class="modal-body">
+                <label>Title</label>
+                <input type="text" name="title">
+            </div>
+            <div class="modal-body">
+                <label>Description</label>
+                <textarea name="description" rows="5" ></textarea>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn edit-btn" data-dismiss="modal">
+          Save</button>
       </div>
     </div>
-  </nav>
+  </div>
+</div>
+</div>
 </template>
 
 <script>
@@ -29,41 +43,45 @@ export default {
 </script>
 
 <style scope>
-.navbar{
-    position: relative;
-    z-index: 1;
+.modal-header h2 {
+    font-size: 25px;
+    margin-left: 10px;
 }
 
-.navbar-brand{
-    font-family: Viga;
-    font-size: 32px;
+.close {
+    color: red;
+    font-size: 40px;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
 }
 
-.tombol{
-    text-transform: uppercase;
-    border-radius: 40px;
+.modal-body input,.modal-body textarea{
+    width: 70%;
+    padding: 12px 170px;
+    display: flex;
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Airbnb Cereal App;
 }
 
-@media (min-width: 992px) {
-
-    .navbar-brand, .nav-link{
-        color: #fff !important;
-        text-shadow: 1px 1px 1px rgba(0, 0,0,.7);
-    }
-
-    .nav-link{
-        text-transform: uppercase;
-        margin-right: 30px;
-    }
-
-    .nav-link:hover::after{
-        content: '';
-        display: block;
-        border-bottom: 3px solid #0B63dC;
-        width: 50%;
-        margin: auto;
-        margin-bottom: -8px;
-        padding-bottom: 5px;
-    }
+textarea{
+    resize: none;
 }
+
+.modal-body label {
+   font-size: 15px;
+    font-weight: bold;
+}
+
+.edit-btn{
+    background: #FBCC38;
+    /* font-style: Airbnb Cereal App; */
+    color: white;
+    font-size: 17px;
+}
+
 </style>
