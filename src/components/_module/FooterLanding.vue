@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 footer{
     font-size: 18px;
     margin-top: 100px;

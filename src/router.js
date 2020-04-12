@@ -44,7 +44,7 @@ const routes = [{
             component: Test,
         },
         {
-            path: '/detail',
+            path: 'detail/:data',
             name: 'Detail',
             component: Detail,
         },

@@ -15,10 +15,10 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .tnc {
     font-size: 17px;
-    top: 870px;
+    top: 970px;
     line-height: 22px;
     color: #D0CCCC;
     position: absolute;

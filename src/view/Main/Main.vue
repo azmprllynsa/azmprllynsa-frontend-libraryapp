@@ -47,13 +47,4 @@ export default {
     padding: 0;
     margin: 0;
 }
-
-a {
-    text-decoration: none;
-}
-
-
-.container-details{
-    font-family: Airbnb Cereal App;
-}
 </style>

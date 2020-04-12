@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .workingspace{
     margin-top: 120px;
     text-align: center;

@@ -65,12 +65,12 @@ export default {
 <style scoped>
 .db-header{
     display: flex;
-    z-index: 3;
+    z-index: -1;
     font-family: Airbnb Cereal App;
 }
 .navbar{
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     background: #fff;
     height: 70px;
@@ -84,21 +84,22 @@ export default {
 
 .navbar-dropdown {
   display: none;
+  z-index: -1;
 }
-.navbar-content{
+/* .navbar-content{
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-}
+} */
 
-.dropdown-content{
+/* .dropdown-content{
     display: none;
     background: #fff;
     position: absolute;
     min-width: 160px;
-    z-index: 1;
-}
+    z-index: -1;
+} */
 
 .nav-search {
   display: none;

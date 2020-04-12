@@ -1,30 +1,36 @@
 <template>
-  <Input/>
+<header class="coverimg" v-bind:coverimg="book.image">
+  <header class="navigation">
+    <NavbarDetail/>
+  </header>
+</header>
 </template>
 
 <script>
-import Input from '../../components/_module/Input.vue';
+
+// import NavbarDetail from '../_module/NavbarDetail.vue';
 
 export default {
-  name: 'Test',
+  name: 'HeaderDetail',
   components: {
-    Input,
+    // NavbarDetail,
   },
+  props: ['book'],
+
+  mounted() {
+    const cover = document.querySelector('.coverimg');
+    cover.style.backgroungImage = `url('${this.book.image}')`;
+  }
+  ,
 };
 </script>
 
 <style scoped>
-  .book{
-    padding: 50px 80px;
-    font-size: 30px;
-  }
-  .list-book{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    display: flex;
-  }
-  .list-book h1{
-    display: block;
-  }
+.coverimg{
+  min-height: 454px;
+  background-image: url('../../assets/image/covernya.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>

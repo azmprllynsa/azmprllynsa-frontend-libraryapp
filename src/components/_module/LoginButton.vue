@@ -1,7 +1,7 @@
 <template>
   <div class="login-input submit-btn">
-    <router-link to='/' class="button btn-1">{{button1}}</router-link>
-    <router-link to='/' class="button btn-2">{{button2}}</router-link>
+    <button type="submit" class="button btn-1">{{button1}}</button>
+    <router-link to='/login' class="button btn-2">{{button2}}</router-link>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 
 .submit-btn {
   margin-top: 20px;

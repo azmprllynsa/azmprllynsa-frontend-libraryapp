@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .testimonial{
     margin-top: 100px;
 }

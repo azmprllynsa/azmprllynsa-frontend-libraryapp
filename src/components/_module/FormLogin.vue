@@ -2,11 +2,13 @@
   <div class="form-input">
     <div class="login-input">
       <label for="email" class='login-label'>Email Address</label>
-        <input type="email" id="email" placeholder="rebecca@gmail.com">
+        <input type="email" id="email" placeholder="rebecca@gmail.com"
+        v-model="email">
     </div>
     <div class="login-input">
       <label for="password" class="login-label">Password</label>
-      <input type="password" id="password" placeholder="****************">
+      <input type="password" id="password" placeholder="****************"
+      v-model="password">
     </div>
   </div>
 </template>
@@ -17,7 +19,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .form-input {
     box-shadow: 0 5px 10px #d0cccc;
     color: #D0CCCC;

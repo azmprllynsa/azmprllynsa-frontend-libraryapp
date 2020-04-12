@@ -29,7 +29,7 @@ export default {
 
 </script>
 
-<style scope>
+<style scoped>
 .option-panel {
     box-shadow: 0 3px 20px rgba(0,0,0,5);
     border-radius: 12px;

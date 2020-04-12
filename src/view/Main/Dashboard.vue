@@ -3,7 +3,8 @@
   <div class="dashboard">
     <NavbarDashboard/>
   </div>
-  <ContainerBook/>
+  <carousel class="carousel-book"/>
+  <p class="list-book">List Book</p>
   <Card/>
   <br>
   <br>
@@ -12,33 +13,45 @@
 </template>
 
 <script>
+import axios from 'axios';
 import NavbarDashboard from '../../components/_module/NavbarDashboard.vue';
-import ContainerBook from '../../components/_module/ContainerBook.vue';
 import Card from '../../components/_module/Card.vue';
+import Carousel from '../../components/_module/Carousel.vue';
 
 export default {
   name: 'Dashboard',
   components: {
     NavbarDashboard,
-    ContainerBook,
     Card,
+    Carousel,
+  },
+  data() {
+    return {
+      books: [],
+    };
+  },
+
+  mounted() {
+    axios.get('http://localhost:8000/api/v1/book/')
+      .then((res) => {
+        this.books = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
 };
 </script>
 
 <style scoped>
+.carousel-book{
+  z-index: -2;
+}
 
-  .book{
-    padding: 50px 80px;
-    font-size: 30px;
-  }
-  .list-book{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    display: flex;
-  }
-  .list-book h1{
-    display: block;
-  }
+.list-book{
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
 </style>

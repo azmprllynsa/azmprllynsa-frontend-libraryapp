@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .navbar{
     position: relative;
     z-index: 1;

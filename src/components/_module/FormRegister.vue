@@ -24,7 +24,7 @@ export default {
   name: 'FormRegister',
 };
 </script>
-<style scope>
+<style scoped>
 .form-input {
     box-shadow: 0 5px 10px #d0cccc;
     color: #D0CCCC;

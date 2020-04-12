@@ -1,27 +1,39 @@
 <template>
   <div>
-    <HeaderDetail/>
+    <HeaderDetail />
     <Rectangle/>
-    <detail-body/>
+    <BodyDetail/>
   </div>
 </template>
 
 <script>
 
+import axios from 'axios';
 import HeaderDetail from '../../components/_base/HeaderDetail.vue';
 import Rectangle from '../../components/_module/Rectangle.vue';
-import DetailBody from '../../components/_module/DetailBody.vue';
+import BodyDetail from '../../components/_base/BodyDetail.vue';
 
 export default {
   name: 'DetailBook',
   components: {
     HeaderDetail,
     Rectangle,
-    DetailBody,
+    BodyDetail,
+  },
+
+  data() {
+    return {
+      bookValue: {},
+    };
+  },
+
+  props: ['data'],
+  mounted() {
+    axios.get(`http://localhost:8000/api/v1/book/${this.$route.params.data}`);
   },
 };
 </script>
 
-<style scope>
+<style scoped>
 
 </style>
